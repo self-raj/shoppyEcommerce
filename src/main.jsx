@@ -53,7 +53,11 @@ const appRoute = createBrowserRouter([
       },
     ],
   },
-]);
+], {
+    basename: "/shoppyEcommerce", // add this line for git
+  }
+
+);
 
 createRoot(document.getElementById("root")).render(
   <RouterProvider router={appRoute}>
